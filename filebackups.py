@@ -10,7 +10,7 @@ def find_file():
     try:
         if os.path.exists(file_path):
 
-            os.open(backup_file,os.O_CREAT)
+#           fd = os.open(backup_file,os.O_CREAT)
             
             shutil.copyfile(file_name, backup_file)
 
